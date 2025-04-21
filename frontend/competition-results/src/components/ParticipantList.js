@@ -35,8 +35,8 @@ function ParticipantList() {
         setLoading(true);
         
         const [participantsRes, coursesRes] = await Promise.all([
-          axios.get(`http://localhost:5000/competitions/${competitionName}/courses/${courseName}/participants`),
-          axios.get(`http://localhost:5000/competitions/${competitionName}/courses`)
+          axios.get(`https://resultat-sportif.onrender.com/competitions/${competitionName}/courses/${courseName}/participants`),
+          axios.get(`https://resultat-sportif.onrender.com/competitions/${competitionName}/courses`)
         ]);
 
         setParticipants(participantsRes.data);
