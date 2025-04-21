@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 // Base URL for backend
-const API_URL = 'http://localhost:5000/competitions';
+const API_URL = 'https://resultat-sportif.onrender.com/competitions';
 
 // Fetch all competitions
 export const getCompetitions = async () => {
